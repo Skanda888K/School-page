@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Autonomous College</title>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Keywords" content="The National college,jayanagar 7th block">
+ <meta name="author" content="Dr. P.L. Ramesh ">
+ <link rel="stylesheet" type="text/css" href="style.css">
+<script src="js.js"></script>
+<script src="validatename.js"></script>
+
+</head>
+<body class="body">
+<header class="mainheader">
+	<img src="logo.png">
+	<content id="search">
+		
+	</content>
+<nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html">Login</a></li>
+      
+    </ul> 
+  </nav>
+</header>
+  
+<h3>Contact</h3>
+<h4>Principal-Dr. P.L. Ramesh</h4>
+<h4>The National  College  <br>
+  36th B Cross 2nd Main
+  7th Block, Jayanagar
+  Bangalore-560070
+<pre>
+Phone : 080-26549684,26656644<br>
+Email :  ncjblore@yahoo.com<br>
+</pre>
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<br>
+<br>
+<strong>If you are a student, please enter your student number:</strong>
+<center>
+    <input id="numb" disabled> <!-- Disabled to show the number and prevent modification -->
+    <button type="button" onclick="myFunction()">Submit</button>
+    <p id="demo"></p>
+</center>
+
+<hr>
+
+<script>
+function myFunction() {
+    var x, text;
+
+    // Get the value of the input field with id="numb"
+    x = document.getElementById("numb").value;
+
+    // If x is Not a Number or less than one or greater than 10
+    if (isNaN(x) || x < 1 || x > 1000) {
+        text = "Input not valid";
+    } else {
+        text = "Input OK";
+    }
+    document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html> 
+<script type="text/javascript">
+  document.title="Contact";
+</script>
+</body>
+
+</html>

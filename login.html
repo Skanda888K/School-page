@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Autonomous College</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Keywords" content="The National College, Jayanagar 7th Block">
+    <meta name="author" content="Dr. P.L. Ramesh">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="js.js"></script>
+    <script src="login.js"></script>
+</head>
+<body class="body">
+<header class="mainheader">
+    <img src="logo.png">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul> 
+    </nav>
+</header>
+
+<div class="container">
+    <div class="main">
+        <h3>Informatics Login</h3><hr/>
+        <form id="login_form" name="myform">
+            <strong>User Name :</strong><br/>
+            <input type="text" name="username" id="username" required/><br/>
+            <strong>Password :</strong><br/>
+            <input type="password" name="password" id="password" required/><br/>
+            <input type="button" value="Login" id="submit" onclick="validateLogin()"/>
+        </form>
+
+        <h3>Register New User</h3><hr/>
+        <form id="register_form" name="register_form">
+            <strong>New User Name :</strong><br/>
+            <input type="text" name="new_username" id="new_username" required/><br/>
+            <strong>New Password :</strong><br/>
+            <input type="password" name="new_password" id="new_password" required/><br/>
+            <input type="button" value="Register" id="register" onclick="registerUser()"/>
+        </form>
+    </div>
+</div>
+
+<script type="text/javascript">
+    document.title = "Login";
+</script>
+</body>
+</html>
