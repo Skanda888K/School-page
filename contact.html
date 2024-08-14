@@ -45,15 +45,13 @@ Email :  ncjblore@yahoo.com<br>
 
 <br>
 <br>
-
-<strong>If you are student please enter your student number:</strong>
+<strong>If you are a student, please enter your student number:</strong>
 <center>
-<input id="numb">
-
-<button type="button" onclick="myFunction()">Submit</button>
-
-<p id="demo"></p>
+    <input id="numb" disabled> <!-- Disabled to show the number and prevent modification -->
+    <button type="button" onclick="myFunction()">Submit</button>
+    <p id="demo"></p>
 </center>
+
 <hr>
 
 <script>
@@ -67,7 +65,7 @@ function myFunction() {
     if (isNaN(x) || x < 1 || x > 1000) {
         text = "Input not valid";
     } else {
-        text = "Input OK";
+        text = "Input OK";s
     }
     document.getElementById("demo").innerHTML = text;
 }
